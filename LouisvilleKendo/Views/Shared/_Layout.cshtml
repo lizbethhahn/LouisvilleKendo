@@ -8,31 +8,53 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Louisville Kendo Club", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Club Members", "Index", "ClubMember")</li>
-                </ul>
-            </div>
+
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #3d5b95;">
+        @Html.ActionLink("Louisville Kendo Club", "Index", "Home")
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar4">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("About", "About", "Home")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Contact", "Contact", "Home")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Club Members", "Index", "ClubMember")
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year -Louisville Kendo Club</p>
+        <!--  Footer -->
+        <footer class="main-footer">
+            <div class="container-fluid">
+                <div class="footer">
+                    <div class="row">
+
+                        <div class="col">
+                            <p><strong>Louisville Kendo Club</strong><br>1932 Production Dr<br>Louisville, KY 40205</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="d-flex justify-content-end">
+                                <a href="index.html"><img src="@Url.Content("~/Content/MyImg/other/")LKC_logo_green.png" style="width:75px; height:75px;"></a>
+                                <a href="http://auskf.org/"><img src="@Url.Content("~/Content/MyImg/other/")auskfLogo.gif" style="width:75px; height:75px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 

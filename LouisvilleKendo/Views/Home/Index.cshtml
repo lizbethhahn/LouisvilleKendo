@@ -6,126 +6,126 @@
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Louisville Kendo Club</title>
+@*<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Louisville Kendo Club</title>
 
-    <!-- Required Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstap CSS and Custom CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="@Url.Content("~/Content/MyCss/")main.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+        <!-- Required Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstap CSS and Custom CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="@Url.Content("~/Content/MyCss/")main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>*@
+<!-- Jumbotron -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="@Url.Content("~/Content/MyCss/")main.css" rel="stylesheet" type="text/css" />
+<div class="jumbotron jumbotron-fluid text-white jumbotron-home">
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid text-white jumbotron-home">
+    <div class="container text-sm-center pt-5">
 
-        <div class="container text-sm-center pt-5">
-
-            <h1 class="display-3">Louisville Kendo Club</h1>
-        </div>
+        <h1 class="display-3">Louisville Kendo Club</h1>
     </div>
+</div>
 
-    <!-- Kata Search form field -->
-    <form class="video-form">
-        <div class="container-fluid">
-            <div class="kataSearch">
-                <div class="row">
-                    <div class="col">
-                        <h3><strong>Kata Search</strong></h3>
-                        <input id="myInput" placeholder="enter a number" type="text">
-                        <button id="myButton" onclick="getVideo()">Submit</button>
-                        <script src="@Url.Content("~/Scripts/MyJs/")app.js"></script>
-                    </div>
-                    <div class="col">
-                        <p>Quick and easy way to view kata video from The All Japan Kendo Federation.  These are black and white video with English dubbing. Please enter a number 1-10. Kodachi 1-3, represented by 8-10.</p>
-                    </div>
+<!-- Kata Search form field -->
+<form class="video-form">
+    <div class="container-fluid">
+        <div class="kataSearch">
+            <div class="row">
+                <div class="col">
+                    <h3><strong>Kata Search</strong></h3>
+                    <input id="myInput" placeholder="enter a number" type="text">
+                    <button id="myButton" onclick="getVideo()">Submit</button>
+                    <script src="@Url.Content("~/Scripts/MyJs/")app.js"></script>
+                </div>
+                <div class="col">
+                    <p>Quick and easy way to view kata video from The All Japan Kendo Federation.  These are black and white video with English dubbing. Please enter a number 1-10. Kodachi 1-3, represented by 8-10.</p>
                 </div>
             </div>
         </div>
-    </form>
-
-    <!--Image Gallery https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive-->
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")alexAdam.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")alexAdam.jpg" alt="Visiting Sensei instructing student." width="300" height="200">
-            </a>
-            <div class="desc">Alex George giving Adam West tips on <i>Jodan no kamae.</i></div>
-        </div>
     </div>
+</form>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")seiza.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")seiza.jpg" width="600" height="400">
-            </a>
-            <div class="desc">Students lined up in <i>seiza</i>, during <i>mokuso.</i></div>
-        </div>
+<!--Image Gallery https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive-->
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")alexAdam.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")alexAdam.jpg" alt="Visiting Sensei instructing student." width="300" height="200">
+        </a>
+        <div class="desc">Alex George giving Adam West tips on <i>Jodan no kamae.</i></div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")hahnStandingRei.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")hahnStandingRei.jpg" width="600" height="400">
-            </a>
-            <div class="desc">Standing <i>rei</i>.</div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")seiza.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")seiza.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Students lined up in <i>seiza</i>, during <i>mokuso.</i></div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")bennettHahn.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")bennettHahn.jpg" width="600" height="400">
-            </a>
-            <div class="desc">Elizabeth Hahn with Alex Bennett Sensei, 7th Dan.</div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")hahnStandingRei.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")hahnStandingRei.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Standing <i>rei</i>.</div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")kendoWomen.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")kendoWomen.jpg" width="600" height="400">
-            </a>
-            <div class="desc">After a joint practice with CKKC in Lexington KY.</div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")bennettHahn.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")bennettHahn.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Elizabeth Hahn with Alex Bennett Sensei, 7th Dan.</div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")hahnKamae.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")hahnKamae.jpg" width="600" height="400">
-            </a>
-            <div class="desc">Elizabeth in <i>kamae.</i></div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")kendoWomen.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")kendoWomen.jpg" width="600" height="400">
+        </a>
+        <div class="desc">After a joint practice with CKKC in Lexington KY.</div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")/louGroup.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")louGroup.jpg" width="600" height="400">
-            </a>
-            <div class="desc">L to R: Adam, Stu, Ian, Josh, Chris, Elias</div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")hahnKamae.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")hahnKamae.jpg" width="600" height="400">
+        </a>
+        <div class="desc">Elizabeth in <i>kamae.</i></div>
     </div>
+</div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")louGroup2.jpg">
-                <img src="@Url.Content("~/Content/MyImg/600x400/")louGroup2.jpg" width="600" height="400">
-            </a>
-            <div class="desc">L to R: Roger, Ian, Elizabeth, Chris, Alex, Stephen, Adam</div>
-        </div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")/louGroup.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")louGroup.jpg" width="600" height="400">
+        </a>
+        <div class="desc">L to R: Adam, Stu, Ian, Josh, Chris, Elias</div>
     </div>
+</div>
 
-    <div class="clearfix"></div>
-    <!--End image gallery -->
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="@Url.Content("~/Content/MyImg/600x400/")louGroup2.jpg">
+            <img src="@Url.Content("~/Content/MyImg/600x400/")louGroup2.jpg" width="600" height="400">
+        </a>
+        <div class="desc">L to R: Roger, Ian, Elizabeth, Chris, Alex, Stephen, Adam</div>
+    </div>
+</div>
 
-    <!-- About, Practice Times, Map -->
-    @*<div class="container">
+<div class="clearfix"></div>
+<!--End image gallery -->
+<!-- About, Practice Times, Map -->
+@*<div class="container">
         <div class="row">
             <div class="col">
                 <div class="about">
@@ -164,9 +164,9 @@
             </div>
         </div>
     </div>*@
-    <!-- End About, Practice Times, Map -->
-    <!--  Footer -->
-    <footer class="main-footer">
+<!-- End About, Practice Times, Map -->
+<!--  Footer -->
+@*<footer class="main-footer">
         <div class="container-fluid">
             <div class="footer">
                 <div class="row">
@@ -184,13 +184,13 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>*@
 
-    @*<!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>*@
+@*<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>*@
 
-</body>
-</html>
+@*</body>
+    </html>*@
